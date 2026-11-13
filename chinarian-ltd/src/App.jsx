@@ -12,7 +12,7 @@ function Navbar() {
   return (
     <header className="navbar">
       <Link to="/" className="brand">
-        CHINARIAN<span> AI LIMITED</span>
+        CHINARIAN AI<span> LIMITED</span>
       </Link>
 
       <nav>
