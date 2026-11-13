@@ -1,120 +1,111 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
+
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
+      <header className="navbar">
+        <a href="#home" className="brand">CHINARIAN<span> LTD</span></a>
+
+        <nav>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main>
+        <section className="hero-section" id="home">
+          <div className="hero-content">
+            <p className="eyebrow">INTELLIGENT AI. BETTER POSSIBILITIES.</p>
+
+            <h1>
+              Training AI Agents
+              <span> for a Smarter Future.</span>
+            </h1>
+
+            <p className="hero-description">
+              We help businesses develop, train and optimise AI agents
+              designed to support people, improve workflows and create
+              smarter ways of working.
+            </p>
+
+            <a href="#services" className="primary-button">
+              Explore Our Services →
+            </a>
+          </div>
+        </section>
+
+        <section className="intro-section" id="about">
+          <p className="eyebrow">WELCOME TO CHINARIAN LTD</p>
+          <h2>Making AI work better for business.</h2>
           <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
+            We focus on helping organisations get more from artificial
+            intelligence through thoughtful AI agent training, practical
+            solutions and continuous improvement.
           </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+        </section>
 
-      <div className="ticks"></div>
+        <section className="services-section" id="services">
+          <p className="eyebrow">WHAT WE DO</p>
+          <h2>Our Services</h2>
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+          <div className="service-grid">
+            <article className="service-card">
+              <span>01</span>
+              <h3>AI Agent Training</h3>
+              <p>
+                Developing and refining AI agents to support specific
+                business tasks and requirements.
+              </p>
+            </article>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
+            <article className="service-card">
+              <span>02</span>
+              <h3>Conversation Design</h3>
+              <p>
+                Creating clear, helpful and natural interactions between
+                people and AI agents.
+              </p>
+            </article>
+
+            <article className="service-card">
+              <span>03</span>
+              <h3>AI Optimisation</h3>
+              <p>
+                Improving agent responses, consistency and performance
+                through ongoing refinement.
+              </p>
+            </article>
+
+            <article className="service-card">
+              <span>04</span>
+              <h3>Workflow Integration</h3>
+              <p>
+                Exploring practical ways AI agents can support business
+                processes and everyday work.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section className="contact-section" id="contact">
+          <p className="eyebrow">LET'S CONNECT</p>
+          <h2>Ready to explore what AI can do?</h2>
+          <p>
+            Get in touch to discuss your AI agent training and business
+            requirements.
+          </p>
+          <a href="mailto:info@chinarian.com" className="primary-button">
+            Contact Us →
+          </a>
+        </section>
+      </main>
+
+      <footer className="footer">
+        <p>© {new Date().getFullYear()} Chinarian LTD. All rights reserved.</p>
+      </footer>
     </>
   )
 }
