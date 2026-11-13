@@ -1,5 +1,4 @@
-
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Link, NavLink } from 'react-router-dom'
 import './App.css'
 
 import Home from './pages/Home'
@@ -17,12 +16,12 @@ function Navbar() {
       </Link>
 
       <nav>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/services">Services</Link>
-        <Link to="/approach">Our Approach</Link>
-        <Link to="/contact">Contact</Link>
-      </nav>
+  <NavLink to="/" end>Home</NavLink>
+  <NavLink to="/about">About</NavLink>
+  <NavLink to="/services">Services</NavLink>
+  <NavLink to="/approach">Our Approach</NavLink>
+  <NavLink to="/contact">Contact</NavLink>
+</nav>
     </header>
   )
 }
