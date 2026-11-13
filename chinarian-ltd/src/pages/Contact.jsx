@@ -8,13 +8,13 @@ function Contact() {
       <p>
         Whether you represent an AI company or a business
         interested in AI agent training, you are welcome
-        to contact Chinarian UK Limited.
+        to contact Chinarian Limited.
       </p>
 
       <div className="contact-details">
         <div>
           <h3>Company</h3>
-          <p>Chinarian UK Limited</p>
+          <p>Chinarian Limited</p>
         </div>
 
         <div>

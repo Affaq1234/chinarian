@@ -3,10 +3,10 @@ function About() {
   return (
     <main className="page-section">
       <p className="eyebrow">ABOUT US</p>
-      <h1>About Chinarian UK Limited</h1>
+      <h1>About Chinarian Limited</h1>
 
       <p>
-        Chinarian UK Limited is focused on AI agent training.
+        Chinarian Limited is focused on AI agent training.
         We support the development of more useful and effective
         AI agents through structured data, clear instructions
         and practical training examples.
