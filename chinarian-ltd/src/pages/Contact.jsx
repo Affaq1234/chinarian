@@ -14,7 +14,7 @@ function Contact() {
       <div className="contact-details">
         <div>
           <h3>Company</h3>
-          <p>Chinarian AI limited</p>
+          <p>CHINARIAN AI LIMITED</p>
         </div>
 
         <div>
