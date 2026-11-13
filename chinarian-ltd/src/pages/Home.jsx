@@ -4,7 +4,6 @@ function Home() {
     <>
       <section className="hero-section">
         <div className="hero-content">
-          <p className="eyebrow">CHINARIAN LIMITED</p>
           <h1>
             Training AI Agents
             <span> for a Smarter Future.</span>
