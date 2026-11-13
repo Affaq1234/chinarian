@@ -1,8 +1,7 @@
-
 :root {
   font-family: Arial, Helvetica, sans-serif;
-  color: #202b3c;
-  background: #f1f3f5;
+  color: #172554;
+  background: #ffffff;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
 }
@@ -19,7 +18,8 @@ html {
 
 body {
   min-width: 320px;
-  background: #f1f3f5;
+  background: #ffffff;
+  color: #172554;
 }
 
 a {
@@ -139,16 +139,17 @@ a {
 .primary-button {
   display: inline-block;
   padding: 16px 26px;
-  border-radius: 5px;
-  background: #374151;
-  color: #ffffff;
+  border-radius: 6px;
+  background: #2563EB;
+  color: #FFFFFF;
   font-size: 14px;
   font-weight: 600;
-  transition: background 0.2s ease;
+  transition: all 0.25s ease;
 }
 
 .primary-button:hover {
-  background: #202b3c;
+  background: #1D4ED8;
+  transform: translateY(-2px);
 }
 
 /* Shared page layout */

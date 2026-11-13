@@ -29,7 +29,7 @@ function Navbar() {
 function Footer() {
   return (
     <footer className="footer">
-      <p>© {new Date().getFullYear()} Chinarian Limited. All rights reserved.</p>
+      <p>© {new Date().getFullYear()} Chinarian AI limited. All rights reserved.</p>
       <p>15 Hillcrest View, Leeds, LS7 4EB, UK</p>
       <p>
         <Link to="/privacy">Privacy Policy</Link>

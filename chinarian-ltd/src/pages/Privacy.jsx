@@ -6,7 +6,7 @@ function Privacy() {
       <h1>Privacy Policy</h1>
 
       <p>
-        Chinarian Limited respects the privacy of visitors
+        Chinarian AI limited respects the privacy of visitors
         to its website. This policy explains how personal
         information may be collected, used and protected.
       </p>
@@ -34,7 +34,7 @@ function Privacy() {
 
       <h2>Contact</h2>
       <p>
-        Chinarian Limited<br />
+        Chinarian AI limited<br />
         15 Hillcrest View, Leeds, LS7 4EB, UK<br />
         Telephone: +44 7888 669972
       </p>
